@@ -1,16 +1,16 @@
 # Token Swap
 
-Демо: https://svetlanagabdul.github.io/web3-swap/
+Demo: https://svetlanagabdul.github.io/web3-swap/
 
-Обмен ETH, WETH и USDC в сети Sepolia.
+Swap ETH, WETH, and USDC on Sepolia.
 
-Кошелёк подключается через MetaMask. Котировку читает контракт Uniswap Quoter V2. Своп уходит в Uniswap Universal Router: нативный ETH оборачивается и разворачивается через WETH, для ERC-20 нужен approve в Permit2. Проскальзывание 0.5%. Перед отправкой транзакция симулируется.
+The wallet connects through MetaMask. Quotes come from the Uniswap Quoter V2 contract. Swaps are sent to the Uniswap Universal Router: native ETH is wrapped and unwrapped through WETH, and ERC-20 tokens need a Permit2 approval. Slippage is 0.5%. The transaction is simulated before it is sent.
 
-## Стек
+## Stack
 
 React, TypeScript, Vite, Tailwind CSS, wagmi, viem, TanStack Query, react-hook-form, Vitest.
 
-## Запуск
+## Run
 
 ```bash
 npm install
